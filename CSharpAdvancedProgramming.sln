@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplicitExplicitOperatorsOverloading", "ImplicitExplicitOperatorsOverloading\ImplicitExplicitOperatorsOverloading.csproj", "{980AE1CD-60CC-4300-B367-00802F7DCCFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{B9C5A41C-B3E7-4525-9B64-AA24629862FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{B9C5A41C-B3E7-4525-9B64-AA24629862FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammaticObjectGeneration", "ProgrammaticObjectGeneration\ProgrammaticObjectGeneration.csproj", "{704664D8-C6AC-4320-BFAE-6BCFDDC09E9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B9C5A41C-B3E7-4525-9B64-AA24629862FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9C5A41C-B3E7-4525-9B64-AA24629862FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9C5A41C-B3E7-4525-9B64-AA24629862FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704664D8-C6AC-4320-BFAE-6BCFDDC09E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704664D8-C6AC-4320-BFAE-6BCFDDC09E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704664D8-C6AC-4320-BFAE-6BCFDDC09E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704664D8-C6AC-4320-BFAE-6BCFDDC09E9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
