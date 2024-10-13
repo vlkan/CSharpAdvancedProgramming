@@ -6,84 +6,84 @@ internal class Program
     private static void Main(string[] args)
     {
         #region Checked - UnChecked
-        //int min = int.MinValue;
-        //int max = int.MaxValue;
+        int min = int.MinValue;
+        int max = int.MaxValue;
 
-        //Console.WriteLine($"Min: {min}, Max: {max}");
-        ////Min: -2147483648, Max: 2147483647
+        Console.WriteLine($"Min: {min}, Max: {max}");
+        //Min: -2147483648, Max: 2147483647
 
-        //min--;
-        //max++;
-        //Console.WriteLine($"Min: {min}, Max: {max}");
-        ////Min: 2147483647, Max: -2147483648
+        min--;
+        max++;
+        Console.WriteLine($"Min: {min}, Max: {max}");
+        //Min: 2147483647, Max: -2147483648
 
-        ////System.OverflowException: 'Arithmetic operation caused an overflow.' error is intentionally suppressed by C#.
-        ////If we do not want the error to be recovered but rather checked as is, we need to perform our arithmetic operation within the "checked" scope.
+        //System.OverflowException: 'Arithmetic operation caused an overflow.' error is intentionally suppressed by C#.
+        //If we do not want the error to be recovered but rather checked as is, we need to perform our arithmetic operation within the "checked" scope.
 
-        //int minC = int.MinValue;
-        //int maxC = int.MaxValue;
+        int minC = int.MinValue;
+        int maxC = int.MaxValue;
 
-        //checked
-        //{
-        //    minC--;
-        //    maxC++;
-        //}
+        checked
+        {
+            minC--;
+            maxC++;
+        }
 
-        //Console.WriteLine($"Min: {minC}, Max: {maxC}");
-        ////throw an error in "minC--" line.
+        Console.WriteLine($"Min: {minC}, Max: {maxC}");
+        //throw an error in "minC--" line.
 
-        ////If we want an arithmetic error to be swallowed, we need to use unchecked.
-        //unchecked
-        //{
-        //    minC--;
-        //    maxC++;
-        //}
+        //If we want an arithmetic error to be swallowed, we need to use unchecked.
+        unchecked
+        {
+            minC--;
+            maxC++;
+        }
 
-        ////If we want to throw an error ourselves, we can do so inside unchecked.
-        //unchecked
-        //{
-        //    minC--;
-        //    maxC++;
-        //    throw new Exception("Here the exception is thrown, not because it is System.OverflowException");
-        //}
+        //If we want to throw an error ourselves, we can do so inside unchecked.
+        unchecked
+        {
+            minC--;
+            maxC++;
+            throw new Exception("Here the exception is thrown, not because it is System.OverflowException");
+        }
         #endregion
         #region ToString()
-        //var student = new Student() { FirstName = "Volkan" };
-        //Console.WriteLine(student.FirstName);
-        //Console.WriteLine(student.LastName);
-        //Console.WriteLine(student);
-        //Console.WriteLine(student.ToString());
+        var student = new Student() { FirstName = "Volkan" };
+        Console.WriteLine(student.FirstName);
+        Console.WriteLine(student.LastName);
+        Console.WriteLine(student);
+        Console.WriteLine(student.ToString());
         #endregion
         #region Object Initializer
-        //var numbers = new List<int>() 
-        //{
-        //    {1},
-        //    {2},
-        //    {3}
-        //};
+        var numbers = new List<int>()
+        {
+            {1},
+            {2},
+            {3}
+        };
 
-        //numbers.Add(4);
+        numbers.Add(4);
 
-        //var oi = new ObjectInitializerE<int>() { 1, 2, 3 };
-        ////OR
-        //var oi2 = new ObjectInitializerL<int>() { 1, 2, 3 };
+        var oi = new ObjectInitializerE<int>() { 1, 2, 3 };
+        //OR
+        var oi2 = new ObjectInitializerL<int>() { 1, 2, 3 };
 
 
-        //foreach (var number in numbers) 
-        //{
-        //    Console.WriteLine(number);
-        //}
+        foreach (var number in numbers)
+        {
+            Console.WriteLine(number);
+        }
 
-        ////indexer
-        //var dict = new ObjectInitializerForDicitonary();
-        //var val1 = dict[1];
-        //var val2 = dict[2];
+        //indexer
+        var dict = new ObjectInitializerForDicitonary();
+        var val1 = dict[1];
+        var val2 = dict[2];
 
-        //var val3 = dict[3, "Volk"];
+        var val3 = dict[3, "Volk"];
 
-        //Console.WriteLine(val1);
-        //Console.WriteLine(val2);
-        //Console.WriteLine(val3);
+        Console.WriteLine(val1);
+        Console.WriteLine(val2);
+        Console.WriteLine(val3);
         #endregion
         #region Abstract- Sealed
         var d = new DerivedClass();
